@@ -20,24 +20,10 @@ To reproduce results shown in the publication you will need Matlab R2015b, YALMI
 </ul>
 
 <b>Case study: </b>
-<ul>The proposed method is demonstrated on two data sets derived from the publication of Gajewicz et al. (2014) (MeOx ENMs) and Walkey et al. (2014) (Gold ENMs). The fist dataset contains a list of 18 metal oxide nanoparticles with their toxicity index which refer to the concentration of metal oxide ENMs that caused a 50% reduction of the cells of human keratinocyte (HaCaT) cell line after 24 hours of exposure (LC50). For these ENMs, there are available 18 quantum-mechanical descriptors and 11 image descriptors. The second dataset consists of 84 culture medium incubated gold anionic and cationic ENMs which are characterized by 40 physicochemical and 129 biological descriptors (protein corona fingerprints). The protein corona fingerprints were filtered by GSVA and only 63 were consisted as statistically significant proteins. (Varsou et al. (2017)). There are also available measurements of there cell association with human A549 cells (in mL/μg(Mg)) as a toxicity index. 
+<ul>The proposed method is demonstrated on the data set derived from the publication of Walkey et al. (2014) (Gold ENMs). The dataset consists of 84 culture medium incubated gold anionic and cationic ENMs which are characterized by 40 physicochemical and 129 biological descriptors (protein corona fingerprints). The protein corona fingerprints were filtered by GSVA and only 63 were consisted as statistically significant proteins. (Varsou et al. (2017)). There are also available measurements of there cell association with human A549 cells (in mL/μg(Mg)) as a toxicity index. 
 </ul>
  
 <b>Default parameters:</b> 
-<ul>
-For MeOx NPs in “1D MILP problem”: 
-<li>lamda=0.02</li>
-<li>beta=0.05</li>
-<li>epsilon=0.05</li>
-<li>U=10</li>
- </ul>
-  <ul>
-For MeOx NPs in “2D MILP problem”: 
-<li>lamda=0.02</li>
-<li>beta=0.05</li>
-<li>epsilon=0.05</li>
-<li>U=10</li>
- </ul>
   <ul>
 For Gold NPs in “1D MILP problem”: 
 <li>lamda=0.01</li>
@@ -47,7 +33,7 @@ For Gold NPs in “1D MILP problem”:
  </ul>
    <ul>
 For Gold NPs in “2D MILP problem”: 
-<li>lamda=0.03</li>
+<li>lamda=0.02</li>
 <li>beta=0.05</li>
 <li>epsilon=0.05</li>
 <li>U=10</li>
