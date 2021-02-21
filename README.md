@@ -20,12 +20,22 @@ To reproduce results shown in the publication you will need Matlab R2015b, YALMI
 </ul>
 
 <b>Case study: </b>
-<ul>The proposed method is demonstrated on the data set derived from the publication of Walkey et al. (2014) (Gold ENMs). The dataset consists of 84 culture medium incubated gold anionic and cationic ENMs which are characterized by 40 physicochemical and 129 biological descriptors (protein corona fingerprints). The protein corona fingerprints were filtered by GSVA and only 63 were consisted as statistically significant proteins. (Varsou et al. (2017)). There are also available measurements of there cell association with human A549 cells (in mL/μg(Mg)) as a toxicity index. 
+<ul>The proposed method is demonstrated on two datasets. The dataset derived from the publication of Walkey et al. (2014) (Gold ENMs), and the dataset derived from the publication of Xia et al., (2011) (MWCNT). The Gold ENMs dataset consists of 84 culture medium incubated gold anionic and cationic ENMs which are characterized by 40 physicochemical and 129 biological descriptors (protein corona fingerprints). The protein corona fingerprints were filtered by GSVA and only 63 were consisted as statistically significant proteins. (Varsou et al. (2017)). There are also available measurements of there cell association with human A549 cells (in mL/μg(Mg)) as a toxicity index. 
 </ul>
+<ul>The MWCNT dataset, consists of a 40 nm diameter MultiwalledCarbon Nanotube (MWCNT), coated with hydroxyl derivatives and the surface absorption properties. Five nanodescriptors representing the surface adsorption interactions (lipophilicity, hydro-gen bond acidity and basicity, polarity/polarizability, and lone-pair electrons) were used to train a model for predicting the adsorption coefficient (k) of this particular ENM. The dataset contained adsorption coefficient (k) values for 28 probe compounds with various physicochemical properties. The k values were converted to logarithmic scale. For external validation, the dataset was partitioned into training and test sets consisting of 21 and 7 probe compounds respectively, using the Kennard-Stone method.
+ </ul>
+ 
  
 <b>Default parameters:</b> 
   <ul>
 For Gold NPs in “1D MILP problem”: 
+<li>lamda=0.01</li>
+<li>beta=0.05</li>
+<li>epsilon=0.05</li>
+<li>U=10</li>
+ </ul>
+   <ul>
+For MWCNT in “1D MILP problem”: 
 <li>lamda=0.01</li>
 <li>beta=0.05</li>
 <li>epsilon=0.05</li>
@@ -38,6 +48,7 @@ For Gold NPs in “2D MILP problem”:
 <li>epsilon=0.05</li>
 <li>U=10</li>
 </ul>
+
 
 <b>Solving "1D problem"</b>
 <ul>
