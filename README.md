@@ -62,11 +62,17 @@ OPLRA_2D_independent_pf1_final.m, OPLRA_2D_independent_pf1_pf2_final.m and OPLRA
 Each one of the above files contains two functions which are necessary for solving the "2D problem". OPLRA_2D_test_final.m applies the produced model to the test set and records the value of the objective function while OPLRA_2D_final.m is a function used for the addiction of regions for the "2D problem". 
 </ul>
 
+# Cite us!
+If you find this methodology useful, please cite us! :) 
+
+Dimitra-Danai Varsou, Nikoletta-Maria Koutroumpa, and Haralambos Sarimveis, "Automated Grouping of Nanomaterials and Read-Across Prediction of Their Adverse Effects Based on Mathematical Optimization", Journal of Chemical Information and Modeling 2021 61 (6), 2766-2779. <a href="https://doi.org/10.1021/acs.jcim.1c00199">DOI: 10.1021/acs.jcim.1c00199</a>
+
+# GUI
+The trained models using MILP-read-across and the above data sets are made publicly available through a user-friendly web service (<a href="https://vythos.jaqpot.org/">https://vythos.jaqpot.org/</a>).
 
 # License
 This application is released under <a href="https://www.gnu.org/licenses/gpl.html"> GNU General Public License v.3</a>.
 ```html
-
 
 This program is free software: you can redistribute it and/or modify it under the terms
 of the GNU General Public License as published by the Free Software Foundation, either
